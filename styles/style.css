@@ -1,0 +1,88 @@
+/*DISPLAY Y MODELO DE CAJAS*/
+
+.cuadrado{
+	width: 100px;
+	height: 40px;
+	background: red;
+	border: 2px solid black;
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 30px;
+	margin-bottom: 25px;
+	margin-left: 35px;
+	color: white;
+	padding: 20px;
+	/*otra forma de escribir margin*/
+	margin: 10px 30px 25px 35px;
+	/*otra forma de escribir margin (tb/lf)*/
+	margin: 30px 50px;
+	box-sizing: border-box;
+}
+
+a{
+	display: block;
+}
+
+li{
+	display: inline;
+}
+
+ul li:nth-child(2){
+	display: none;
+}
+
+
+/*POSITION*/
+
+.cuadrado2{
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+	background: blue;
+	display:inline-block;
+}
+
+.relativo{
+	background: red;
+    top: 30px;
+    left: 20px;
+    position: relative;
+}
+
+.fijo{
+	background: yellowgreen;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+}
+
+/*la posicion en absolute es con
+respecto al body, salvo que tenga un
+padre con la posicion "relative"*/
+.absolut{
+	background: orange;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 9;
+}
+
+
+
+/*FLOTAR ELEMENTOS*/
+
+.cuadrado3{
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	background: orange;
+	float: right;
+}
+
+
+/*overflow:auto al padre para que el float:right
+no le genere height=0(que no queden los hijos por
+fuera del padre)*/
+
+
